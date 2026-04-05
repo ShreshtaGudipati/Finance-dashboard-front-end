@@ -1,5 +1,6 @@
 .transactions-container {
     padding: 50px;
+    overflow-x: auto;
   }
   
   /* TABLE */

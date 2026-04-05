@@ -181,3 +181,73 @@ a:hover {
   background: var(--card-bg);
   color: var(--text-primary);
 }
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar-links {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* DASHBOARD CARDS */
+  .dashboard-cards {
+    flex-direction: column;
+  }
+
+  /* CHARTS */
+  .glass-card {
+    padding: 15px;
+  }
+
+  /* TABLE SCROLL */
+  .transactions-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  /* INPUTS */
+  input, select {
+    width: 100%;
+  }
+
+  /* AUTH CARD */
+  .auth-card {
+    width: 100%;
+    max-width: 400px;
+
+  }
+}
+/* DASHBOARD CARDS */
+.dashboard-cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.dashboard-cards .glass-card {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* CHART CARDS */
+.chart-card {
+  margin-top: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .dashboard-cards {
+    flex-direction: column;
+  }
+}

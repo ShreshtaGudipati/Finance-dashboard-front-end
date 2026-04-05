@@ -1,0 +1,31 @@
+.transactions-container {
+    padding: 50px;
+  }
+  
+  /* TABLE */
+  .transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--text-primary);
+  }
+  
+  /* HEADINGS */
+  .transactions-table th {
+    text-align: left;
+    padding: 12px;
+    font-weight: 600;
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border);
+  }
+  
+  /* ROW DATA */
+  .transactions-table td {
+    padding: 12px;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border);
+  }
+  
+  /* HOVER */
+  .transactions-table tr:hover {
+    background: rgba(124, 58, 237, 0.1);
+  }

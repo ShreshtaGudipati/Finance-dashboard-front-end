@@ -1,0 +1,183 @@
+/* ================= FONT ================= */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  transition: all 0.3s ease;
+  color: var(--text-primary); /* ✅ KEEP THIS */
+}
+/* ================= THEME VARIABLES ================= */
+.income {
+  color: #22c55e;
+  font-weight: 500;
+}
+
+.expense {
+  color: #ef4444;
+  font-weight: 500;
+}
+/* LIGHT THEME */
+.light {
+  --bg-main: #f9fafb;
+  --bg-secondary: #eef2ff;
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --border: rgba(0, 0, 0, 0.05);
+
+  --accent-blue: #2563eb;
+  --accent-violet: #7c3aed;
+}
+
+/* DARK THEME */
+.dark {
+  --bg-main: #020617;
+  --bg-secondary: #0f172a;
+
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+
+  --card-bg: rgba(15, 23, 42, 0.7);
+  --border: rgba(255, 255, 255, 0.08);
+
+  --accent-blue: #4f46e5;
+  --accent-violet: #7c3aed;
+}
+
+/* ================= BACKGROUND ================= */
+
+
+
+/* LIGHT BACKGROUND */
+.light.app {
+  background: linear-gradient(135deg, #ffffff, #eef2ff);
+}
+
+/* DARK BACKGROUND */
+.dark.app {
+  background:
+    radial-gradient(circle at 20% 20%, #1e1b4b, transparent 40%),
+    radial-gradient(circle at 80% 0%, #0f172a, transparent 50%),
+    #020617;
+}
+
+/* ================= TYPOGRAPHY ================= */
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  color: var(--text-primary);
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* Accent text */
+.accent-text {
+  background: linear-gradient(90deg, #6366f1, #7c3aed);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ================= GLASS CARD ================= */
+
+.glass-card {
+  backdrop-filter: blur(14px);
+  border-radius: 16px;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+/* LIGHT CARD */
+.light .glass-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* DARK CARD */
+.dark .glass-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+
+  box-shadow:
+    0 0 10px rgba(124, 58, 237, 0.15),
+    0 0 20px rgba(79, 70, 229, 0.1);
+}
+
+.glass-card:hover {
+  transform: translateY(-4px);
+}
+
+/* ================= BUTTON ================= */
+
+button {
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-violet));
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* ================= LINKS ================= */
+
+a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+a:hover {
+  color: var(--accent-blue);
+}
+
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card {
+  width: 450px;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auth-card input,
+.auth-card select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text-primary);
+}

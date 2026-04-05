@@ -1,0 +1,65 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+  
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  .navbar-links a {
+    text-decoration: none;   /* ❌ remove underline */
+    color: var(--text-primary);
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  
+  /* hover effect */
+  .navbar-links a:hover {
+    color: var(--accent-blue);
+  }
+  .navbar-links a.active {
+    color: var(--accent-violet);
+    border-bottom: 2px solid var(--accent-violet);
+  }
+  /* LIGHT NAVBAR */
+  .light .navbar {
+    background: rgba(255, 255, 255, 0.7);
+  }
+  
+  /* DARK NAVBAR */
+  .dark .navbar {
+    background: rgba(15, 23, 42, 0.6);
+  }
+  
+  /* TITLE */
+  .navbar-title {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  
+    background: linear-gradient(90deg, #6366f1, #7c3aed);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* LINKS */
+  .navbar-links {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .navbar-links a {
+    font-weight: 500;
+    transition: 0.2s;
+  }
+  
+  /* ROLE */
+  .navbar-role select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    color: var(--text-primary);
+  }
